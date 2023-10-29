@@ -34,8 +34,9 @@ class PolarisCta extends LitElement {
       max-width: 500px;
 }
 
-.subscribe-text {
+.subscribe-text {  
       margin-bottom: 0px;
+      margin-right: 65px;
       font-size: 18px;
       color: solid black;
       font-weight: bold;
@@ -52,7 +53,7 @@ class PolarisCta extends LitElement {
       font-size: 24px;
       font-weight: bold;
       font-style: italic;
-      transition: color 0.3s, background-color 0.3s;
+      transition: color 0.3s,             background-color 0.3s;
 }
 
 .subscribe-button:hover {
@@ -92,6 +93,66 @@ class PolarisCta extends LitElement {
       height: 15px;
       background-color: #1E407C;
 }
+
+.card:nth-child(2) .subscribe-button {
+      background-color: #1260CC;
+      color: white;
+      border: 2px solid #1260CC;
+}
+
+.card:nth-child(2) .subscribe-button:hover {
+       background-color: white;
+       color: #1260CC;
+}
+
+.card:nth-child(3) {
+            background-color: #ccc;
+}
+
+.card:nth-child(3) .subscribe-button {
+            background-color: grey;
+            color: #9ACBF7;
+            border: 2px solid grey;
+}
+
+.card:nth-child(3) .subscribe-button:hover {
+            background-color: #9ACBF7;
+            color: grey;
+}
+
+.card:nth-child(4) {
+            background-color: #001F3F;
+            color: white;
+}
+
+.card:nth-child(4) .subscribe-button {
+            background-color: #001F3F;
+            color: #9ACBF7;
+            border: 2px solid white;
+}
+
+.card:nth-child(4) .subscribe-button:hover,
+.card:nth-child(4) .subscribe-button:focus {
+            background-color: #001F3F;
+            color: white;
+}
+
+
+.card:nth-child(5) {
+            background-color: #001F3F;
+            color: white;
+}
+
+.card:nth-child(5) .subscribe-button {
+            background-color: #9ACBF7;
+            color: #001F3F;
+            border: 2px solid #9ACBF7;
+}
+
+.card:nth-child(5) .subscribe-button:hover {
+            background-color: #001F3F;
+            color: #9ACBF7;
+}
   `;
 
   constructor() {
@@ -104,12 +165,27 @@ class PolarisCta extends LitElement {
       <main>
       <div class="wrapper">
 <div class="card">
-    <div class="subscribe-text">Get The News By Email</div>
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
     <button class="subscribe-button">SUBSCRIBE ></button>
   </div>
 
   <div class="card">
-    <div class="subscribe-text">Get The News By Email</div>
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button">SUBSCRIBE ></button>
+  </div>
+  
+  <div class="card">
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button">SUBSCRIBE ></button>
+  </div>
+  
+  <div class="card">
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button">SUBSCRIBE ></button>
+  </div>
+  
+  <div class="card">
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
     <button class="subscribe-button">SUBSCRIBE ></button>
   </div>
       </main>
