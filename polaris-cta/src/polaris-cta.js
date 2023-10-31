@@ -164,30 +164,31 @@ class PolarisCta extends LitElement {
     return html`
       <main>
       <div class="wrapper">
-<div class="card">
-    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-    <button class="subscribe-button">SUBSCRIBE ></button>
-  </div>
+    <div class="card">
+        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+    </div>
 
-  <div class="card">
-    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-    <button class="subscribe-button">SUBSCRIBE ></button>
-  </div>
-  
-  <div class="card">
-    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-    <button class="subscribe-button">SUBSCRIBE ></button>
-  </div>
-  
-  <div class="card">
-    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-    <button class="subscribe-button">SUBSCRIBE ></button>
-  </div>
-  
-  <div class="card">
-    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-    <button class="subscribe-button">SUBSCRIBE ></button>
-  </div>
+    <div class="card">
+        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+    </div>
+
+    <div class="card">
+        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+    </div>
+
+    <div class="card">
+        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+    </div>
+
+    <div class="card">
+        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+    </div>
+</div>
       </main>
     `;
   }
