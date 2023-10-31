@@ -23,7 +23,7 @@ class PolarisCta extends LitElement {
     }
 
     .card {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
       align-items: center;
       position: relative;
@@ -166,28 +166,37 @@ class PolarisCta extends LitElement {
       <div class="wrapper">
     <div class="card">
         <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
+        <button class="subscribe-button" onclick="redirectToLink()">
+            <slot name="button-text">SUBSCRIBE ></slot>
+        </button>
     </div>
 
-    <div class="card">
-        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
-    </div>
+   <div class="card">
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button" onclick="redirectToLink()">
+        <slot name="button-text">SUBSCRIBE ></slot>
+    </button>
+</div>
 
     <div class="card">
-        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
-    </div>
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button" onclick="redirectToLink()">
+        <slot name="button-text">SUBSCRIBE ></slot>
+    </button>
+</div>
+    
+  <div class="card">
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button" onclick="redirectToLink()">
+        <slot name="button-text">SUBSCRIBE ></slot>
+    </button>
+</div>
 
     <div class="card">
-        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
-    </div>
-
-    <div class="card">
-        <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
-        <button class="subscribe-button" onclick="redirectToLink()">SUBSCRIBE ></button>
-    </div>
+    <div class="subscribe-text">GET THE NEWS BY EMAIL</div>
+    <button class="subscribe-button" onclick="redirectToLink()">
+        <slot name="button-text">SUBSCRIBE ></slot>
+    </button>
 </div>
       </main>
     `;
